@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/puntosVentaFragment">
+
+    <fragment
+        android:id="@+id/puntosVentaFragment"
+        android:name="com.hfad.coffincontrolinventario.PuntosVentaFragment"
+        android:label="fragment_puntos_venta"
+        tools:layout="@layout/fragment_puntos_venta" >
+        <action
+            android:id="@+id/action_puntosVentaFragment_to_PVStockFragment"
+            app:destination="@id/PVStockFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PVStockFragment"
+        android:name="com.hfad.coffincontrolinventario.PVStockFragment"
+        android:label="fragment_p_v_stock"
+        tools:layout="@layout/fragment_p_v_stock" >
+        <argument
+            android:name="puntoVenta"
+            app:argType="string" />
+    </fragment>
+</navigation>
