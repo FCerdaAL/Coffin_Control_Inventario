@@ -27,7 +27,7 @@ class PuntosVentaFragment : Fragment() {
 // onDestroyView.
     private val binding get() = _binding!!
 
-   // var list = mutableListOf<Button>()
+
 
     /*// Importando viewmodel
     val viewmodel = ViewModelProvider(this).get(PuntosVentaViewModel::class.java)*/
